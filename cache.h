@@ -25,7 +25,7 @@ public:
   int tamano_tag; 
   int tamano_index;
   int n_bloques;
-  int tamano_memoria=4194304;
+  int tamano_memoria=4194304; //Corresponde a una memoria de  4GB 
   string asociatividad;
 
   void setAtributos(string asociatividad0, int tamano_cache0, int tamano_bloque0)
@@ -36,6 +36,8 @@ public:
   //tamano_memoria=tamano_memoria0;
  }
 
+
+//Se decodifica la direccion de hexadecimal a binario
   string decodificador(char c)
         {	
 	switch(c)
@@ -76,7 +78,7 @@ class Cache_Asoc:public Cache{
 	
 	int hit;
 	int miss;
-
+//Se reciben los datos dados por el usuario y se crea cache de esta forma
 	Cache_Asoc(int asociatividad, int tamano_cache, int tamano_bloque)
   	{ 
 	this->n_ways = asociatividad;
@@ -104,7 +106,7 @@ class Cache_Asoc:public Cache{
 	cout << "tamano_tag=" << tamano_tag<< endl;
   	}
 
-
+//Se reciben bits en string y devuelve su valor en decimal
 	int decodificar_decimal(string binario, int tamano)
 	{
 	string::iterator iterador4;
@@ -137,6 +139,7 @@ class Cache_Asoc:public Cache{
 	
 };
 
+// Se declara una clase para el mapeo directo
 class Directo:public Cache{
 public:
 void getDatos(){
@@ -214,6 +217,8 @@ cuenta--;
 }
 return offset;
 }
+
+//Se reciben bits en string y devuelve su valor en decimal
 int decodificar_decimal(string binario, int tamano){
 string::iterator iterador4;
 string codificado;
