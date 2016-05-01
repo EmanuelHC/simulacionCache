@@ -30,9 +30,9 @@ El proyecto consta de los archivos cache.cpp, cache.h y Makefile. Para compilar 
 en la misma carpeta que contiene los archivos cache.cpp, cache.h y Makefile (asumiendo que el archivo .trace 
 también se encuentra en esta carpeta), se deben seguir los siguentes pasos, en una terminal de linux:
 
-1. $ make
-2. $ ./cache <asociatividad> <tamaño del caché> <tamaño del 
-bloque>
+- $ make
+- $ ./cache [asociatividad] [tamaño del caché] [tamaño del 
+bloque]
 
 Donde la asociatividad se escribe como: n-way-associative, donde n = 1,2,4.
 El tamaño de caché se asume en kilobytes [KB] y el tamaño del bloque en bytes [B].
