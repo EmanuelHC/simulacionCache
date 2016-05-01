@@ -40,14 +40,17 @@ Ejemplos de ejecución en la terminal de linux:
 
 Para mapeo asociativo, tipo 2-way associative:
 $ ./cache 2-way-associative 64 8
+
 Esto sería un caché de 64 KB de memoria, con bloques de 8 bytes. 
 
 Para mapeo asociativo, tipo 4-way associtive:
 $ ./cache 4-way-associative 256 16
+
 Esto sería un caché de 256 KB de memoria, con bloques de 16 bytes.
 
 Ó bien, para mapeo directo:
 $ ./cache 1-way-associative 128 4
+
 Esto sería un caché de 128 KB de memoria, con bloques de 4 bytes.
 
 %-----------------------------------------------------------------------------------------
